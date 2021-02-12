@@ -19,7 +19,7 @@ video {
 }
 
 .hero-container > #avatar {
-    width: 250px;
+    width: 200px;
     height: auto;
     border: 3px solid rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
@@ -29,6 +29,7 @@ video {
     color: #fff;
     font-size: 90px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .hero-container > p {
@@ -55,9 +56,7 @@ video {
     .hero-container > #avatar {
         width: 200px;
         height: auto;
-        margin-top: -100px;
-        border: 3px solid rgb(255, 255, 255);
-        background-color: rgb(255, 255, 255);
+        margin-top: -50px;
     }
 
     .hero-container > h1 {
@@ -73,6 +72,7 @@ video {
 @media screen and (max-width: 768px) {
     .hero-container > h1 {
         font-size: 50px;
+        margin-bottom: 0;
     }
 
     .hero-container > p {
@@ -87,4 +87,17 @@ video {
     .btn {
         width: 100%;
     }
+}
+
+.social-icons {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.social-icon-link {
+    color: white;
+    font-size: 40px;
 }
