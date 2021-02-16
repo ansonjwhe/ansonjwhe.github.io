@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <>
+    <div id='site-container'>
       <Router>
         <Navbar />
         <Switch>
@@ -17,7 +17,7 @@ function App() {
           <Route path='/sign-up' component={SignUp} /> */}
         </Switch>
       </Router>
-    </>
+    </div>
   );
 }
 

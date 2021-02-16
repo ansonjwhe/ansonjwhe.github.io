@@ -12,8 +12,7 @@ function HeroSection() {
       
       <Avatar alt='Profile Photo' id='avatar' src='/images/self.jpg'/>
       <h1>Hey! I'm Anson He</h1>
-      <p>I'm an 18-year-old undergraduate student studying Computing and Financial Management at the University of Waterloo.</p>
-      <p>Thanks for stopping by!</p>
+      <p>I'm an aspiring developer studying Computing and Financial Management at the University of Waterloo.</p>
 
       <div class='social-icons'>
         <a

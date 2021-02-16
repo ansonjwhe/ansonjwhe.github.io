@@ -5,6 +5,10 @@
   font-family: 'PT Sans', sans-serif;
 }
 
+#site-container {
+  background: url('./img/background.jpg') center center/cover no-repeat;
+  background-attachment: fixed;
+}
 
 
 .About {

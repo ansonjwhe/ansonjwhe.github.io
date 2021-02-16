@@ -7,7 +7,6 @@ video {
 }
 
 .hero-container {
-    background: url('../img/background.jpg') center center/cover no-repeat;
     height: calc(100vh - 80px);
     width: 100%;
     display: flex;
