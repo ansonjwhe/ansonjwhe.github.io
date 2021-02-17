@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import IntroPanel from './components/IntroPanel'
 import About from './components/pages/About'
 import Music from './components/pages/Music'
 import './App.css'

@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-// import { Button } from './Button';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
@@ -21,24 +20,8 @@ function HideOnScroll(props) {
 
 export default function Navbar(props) {
   const [click, setClick] = useState(false);
-  // const [button, setButton] = useState(true);
-
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-
-  // const showButton = () => {
-  //   if (window.innerWidth <= 960) {
-  //     setButton(false);
-  //   } else {
-  //     setButton(true);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   showButton();
-  // }, []);
-
-  // window.addEventListener('resize', showButton);
 
   return (
     <>
@@ -61,18 +44,6 @@ export default function Navbar(props) {
               </li>
 
               <li className='nav-item'>
-                <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
-                  Projects
-                </Link>
-              </li>
-
-              <li className='nav-item'>
-                <Link to='/experiences' className='nav-links' onClick={closeMobileMenu}>
-                  Experiences
-                </Link>
-              </li>
-
-              <li className='nav-item'>
                 <Link to='/resume' className='nav-links' onClick={closeMobileMenu}>
                   Resume
                 </Link>
@@ -84,7 +55,6 @@ export default function Navbar(props) {
                 </Link>
               </li>
             </ul>
-            {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
           </div>
         </nav>
       </HideOnScroll>

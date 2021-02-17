@@ -35,3 +35,8 @@
 #music-container > p > a:visited {
     color: #9545d6;
 }
+
+iframe {
+    width: 80vw;
+    height: 100vh;
+}
