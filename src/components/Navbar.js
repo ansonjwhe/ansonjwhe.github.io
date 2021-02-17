@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './Navbar.css';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
@@ -19,6 +20,7 @@ function HideOnScroll(props) {
 }
 
 export default function Navbar(props) {
+  let location = useLocation()
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -29,7 +31,7 @@ export default function Navbar(props) {
         <nav className='navbar'>
           <div className='navbar-container'>
             <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-              Anson He
+              ansonjwhe
             </Link>
 
             <div className='menu-icon' onClick={handleClick}>
@@ -38,21 +40,33 @@ export default function Navbar(props) {
 
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className='nav-item'>
-                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                <HashLink smooth to='/#' className='nav-links' onClick={closeMobileMenu}>
                   About
-                </Link>
+                </HashLink>
               </li>
 
               <li className='nav-item'>
-                <Link to='/resume' className='nav-links' onClick={closeMobileMenu}>
+                <HashLink smooth to='/#experiences' className='nav-links' onClick={closeMobileMenu}>
+                  Experiences
+                </HashLink>
+              </li>
+
+              <li className='nav-item'>
+                <HashLink smooth to='/#projects' className='nav-links' onClick={closeMobileMenu}>
+                  Projects
+                </HashLink>
+              </li>
+
+              <li className='nav-item'>
+                <HashLink smooth to='/resume#' className='nav-links' onClick={closeMobileMenu}>
                   Resume
-                </Link>
+                </HashLink>
               </li>
 
               <li className='nav-item'>
-                <Link to='/music' className='nav-links' onClick={closeMobileMenu}>
+                <HashLink smooth to='/music#' className='nav-links' onClick={closeMobileMenu}>
                   Music
-                </Link>
+                </HashLink>
               </li>
             </ul>
           </div>

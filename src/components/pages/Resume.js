@@ -6,7 +6,7 @@ import ResumeSection from '../sections/ResumeSection';
 export default function Resume() {
   return (
     <>
-        <ResumeSection />
+      <ResumeSection />
     </>
   );
 }

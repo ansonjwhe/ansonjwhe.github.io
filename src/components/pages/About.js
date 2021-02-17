@@ -8,7 +8,12 @@ export default function About() {
   return (
     <>
       <HeroSection />
-      <CardSection />
+      <div id='experiences'>
+        <CardSection header='Experiences'/>
+      </div>
+      <div id='projects'>
+        <CardSection id='projects' header='Projects'/>
+      </div>
     </>
   );
 }
