@@ -1,10 +1,10 @@
 import React from 'react';
 import '../../App.css';
-import CardSection from '../CardSection';
-import HeroSection from '../HeroSection';
+import HeroSection from '../sections/HeroSection';
+import CardSection from '../sections/CardSection';
 // import Footer from '../Footer';
 
-function About() {
+export default function About() {
   return (
     <>
       <HeroSection />
@@ -12,5 +12,3 @@ function About() {
     </>
   );
 }
-
-export default About;

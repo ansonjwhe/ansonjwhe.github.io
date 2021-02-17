@@ -14,7 +14,7 @@ import 'swiper/components/scrollbar/scrollbar.scss';
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
-function CardSlider() {
+export default function CardSlider() {
   return (
     <div id='slider-container'>
       <Swiper
@@ -36,5 +36,3 @@ function CardSlider() {
     </div>
   );
 }
-
-export default CardSlider;

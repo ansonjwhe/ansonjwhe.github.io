@@ -1,9 +1,9 @@
 import React from 'react';
 import Avatar from '@material-ui/core/Avatar'
-import '../App.css';
+import '../../App.css';
 import './HeroSection.css';
 
-function HeroSection() {
+export default function HeroSection() {
   return (
     <div className='hero-container'>
       {/* <video src='/videos/video-1.mp4' autoPlay loop muted /> */}
@@ -53,5 +53,3 @@ function HeroSection() {
     </div>
   );
 }
-
-export default HeroSection;

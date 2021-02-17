@@ -1,12 +1,12 @@
 import React from 'react';
 import '../../App.css';
-import MusicSection from '../sections/MusicSection';
+import ResumeSection from '../sections/ResumeSection';
 // import Footer from '../Footer';
 
-export default function Music() {
+export default function Resume() {
   return (
     <>
-      <MusicSection />
+        <ResumeSection />
     </>
   );
 }

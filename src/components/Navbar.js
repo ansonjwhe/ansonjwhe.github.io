@@ -12,7 +12,7 @@ function HideOnScroll(props) {
   const trigger = useScrollTrigger({ target: window ? window() : undefined });
 
   return (
-    <Slide style={{position: 'fixed'}} appear={false} direction="down" in={!trigger}>
+    <Slide style={{position: 'fixed'}} appear={false} direction='down' in={!trigger}>
       {children}
     </Slide>
   );

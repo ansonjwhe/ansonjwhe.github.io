@@ -1,4 +1,4 @@
-#music-container{
+#resume-container{
     height: auto;
     width: 100%;
     display: flex;
@@ -9,14 +9,14 @@
     object-fit: contain;
 }
 
-#music-container > h1 {
+#resume-container > h1 {
     color: #fff;
     font-size: 60px;
     text-align: center;
     margin: 120px 0 30px;
 }
 
-#music-container > p {
+#resume-container > p {
     margin: 8px 100px;
     color: #fff;
     font-size: 24px;
@@ -27,16 +27,16 @@
 }
 
 
-#music-container > p > a:link {
+#resume-container > p > a:link {
     color: #598df3;
 
 }
 
-#music-container > p > a:visited {
+#resume-container > p > a:visited {
     color: #9545d6;
 }
 
-iframe {
-    width: 80vw;
+#resume-container > iframe {
+    width: 70vw;
     height: 100vh;
 }

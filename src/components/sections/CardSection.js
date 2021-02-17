@@ -1,8 +1,9 @@
 import React from 'react'
+import '../../App.css';
 import './CardSection.css';
-import CardSlider from './CardSlider';
+import CardSlider from '../CardSlider';
 
-function CardSection() {
+export default function CardSection() {
     return (
         <div className='container'>
             <h1>Experiences</h1>
@@ -10,5 +11,3 @@ function CardSection() {
         </div>
     )
 }
-
-export default CardSection
