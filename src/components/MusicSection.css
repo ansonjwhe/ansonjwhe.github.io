@@ -1,0 +1,37 @@
+#music-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+    object-fit: contain;
+}
+
+#music-container > h1 {
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    margin: 120px 0 30px;
+}
+
+#music-container > p {
+    margin: 8px 100px;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+#music-container > p > a:link {
+    color: #598df3;
+
+}
+
+#music-container > p > a:visited {
+    color: #9545d6;
+}
