@@ -17,21 +17,21 @@ video {
     object-fit: contain;
 }
 
-.hero-container > #avatar {
+.hero-container #avatar {
     width: 200px;
     height: auto;
     border: 3px solid rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
 }
 
-.hero-container > h1 {
+.hero-container h1 {
     color: #fff;
     font-size: 90px;
     text-align: center;
     margin: 20px 0;
 }
 
-.hero-container > p {
+.hero-container p {
     margin: 8px 100px;
     color: #fff;
     font-size: 32px;
