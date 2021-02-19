@@ -2,6 +2,7 @@
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Card from './Card'
 import './CardSlider.css'
 
 // import 'swiper-bundle.css'
@@ -14,7 +15,15 @@ import 'swiper/components/scrollbar/scrollbar.scss';
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
-export default function CardSlider() {
+export default function CardSlider(props) {
+  const data = props.data
+
+  const slides = data.map((item) =>
+    <SwiperSlide class='swiper-slide'>
+      <Card name={item.name} imgsrc={item.imgsrc} desc={item.desc}></Card>
+    </SwiperSlide>
+  )
+
   return (
     <div id='slider-container'>
       <Swiper
@@ -28,10 +37,7 @@ export default function CardSlider() {
         onSwiper = {(swiper) => console.log(swiper)}
         onSlideChange = {() => console.log('slide change')}
       >
-        <SwiperSlide class='swiper-slide'>Slide 1</SwiperSlide>
-        <SwiperSlide class='swiper-slide'>Slide 2</SwiperSlide>
-        <SwiperSlide class='swiper-slide'>Slide 3</SwiperSlide>
-        <SwiperSlide class='swiper-slide'>Slide 4</SwiperSlide>
+        {slides}
       </Swiper>
     </div>
   );
