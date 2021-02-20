@@ -33,7 +33,7 @@ export default function About() {
     },
     {
       name: 'WATonomous',
-      imgsrc: '/images/watonomous.gif',
+      imgsrc: '/images/watonomous.jpg',
       desc: 'As a core member of external sponsorship, I help raise funding for WATonomous, University of Waterloo\'s '
       + 'one and only autonomous vehicle student design team.'
     }

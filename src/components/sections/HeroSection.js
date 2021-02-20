@@ -1,6 +1,6 @@
 import React from 'react';
 import Avatar from '@material-ui/core/Avatar'
-import {Fade, Zoom} from 'react-reveal'
+import Fade from 'react-reveal'
 
 import '../../App.css';
 import './HeroSection.css';
@@ -12,8 +12,8 @@ export default function HeroSection() {
       <Fade top>
       <Avatar alt='Profile Photo' id='avatar' src='/images/self.jpg'/>
       </Fade>
-      <Zoom right><h1>Hey! I'm Anson He</h1></Zoom>
-      <Zoom left><p>I'm an aspiring developer studying Computing and Financial Management at the University of Waterloo.</p></Zoom>
+      <Fade top><h1>Hey! I'm Anson He</h1></Fade>
+      <Fade bottom><p>I'm an aspiring developer studying Computing and Financial Management at the University of Waterloo.</p></Fade>
       <Fade bottom>
       <>
         <div class='social-icons'>
