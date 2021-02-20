@@ -2,6 +2,7 @@ import React from 'react';
 import '../../App.css';
 import HeroSection from '../sections/HeroSection';
 import CardSection from '../sections/CardSection';
+import Footer from '../Footer';
 // import Footer from '../Footer';
 
 export default function About() {
@@ -76,6 +77,7 @@ export default function About() {
       <div id='projects'>
         <CardSection header='Projects' data={projects}/>
       </div>
+      <Footer />
     </>
   );
 }

@@ -89,7 +89,7 @@ video {
 }
 
 .social-icons {
-    width: 250px;
+    width: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -98,5 +98,10 @@ video {
 
 .social-icon-link {
     color: white;
-    font-size: 40px;
+    font-size: 50px;
+}
+
+.social-icon-link:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
 }
