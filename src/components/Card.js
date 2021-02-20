@@ -1,5 +1,5 @@
-
-
+import React from 'react'
+import Fade from 'react-reveal'
 import './Card.css'
 
 
@@ -21,10 +21,12 @@ export default function Card(props) {
 
 
   return (
+    <Fade bottom cascade>
     <div id='card-container'>
-    <h3 id='card-name'>{props.name}</h3>
-    {img}
-    <p id='card-desc'>{props.desc}</p>
+      <h3 id='card-name'>{props.name}</h3>
+      {img}
+      <p id='card-desc'>{props.desc}</p>
     </div>
+    </Fade>
   )
 }

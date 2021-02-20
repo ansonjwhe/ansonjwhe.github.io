@@ -1,5 +1,6 @@
 // import Swiper core and required modules
 import React from 'react';
+import Flip from 'react-reveal'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
@@ -34,19 +35,20 @@ export default function CardSlider(props) {
 
   return (
     <div id='slider-container'>
-      <Swiper
-        loop = {true}
-        slidesPerView = {3}
-        spaceBetween = {10}
-        navigation
-        pagination = {{ clickable: true }}
-        setWrapperSize = {true}
-        onSwiper = {(swiper) => console.log(swiper)}
-        onSlideChange = {() => console.log('slide change')}
-        grabCursor = {true}
-      >
-        {slides}
-      </Swiper>
+        <Swiper
+          id='slider-container'
+          loop = {true}
+          slidesPerView = {3}
+          spaceBetween = {10}
+          navigation
+          pagination = {{ clickable: true }}
+          setWrapperSize = {true}
+          onSwiper = {(swiper) => console.log(swiper)}
+          onSlideChange = {() => console.log('slide change')}
+          grabCursor = {true}
+        >
+          {slides}
+        </Swiper>
     </div>
   );
 }

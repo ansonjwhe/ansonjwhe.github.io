@@ -9,15 +9,15 @@
     object-fit: contain;
 }
 
-#music-container > h1 {
+#music-container h1 {
     color: #fff;
     font-size: 60px;
     text-align: center;
     margin: 120px 0 30px;
 }
 
-#music-container > p {
-    margin: 8px 100px;
+#music-container p {
+    margin: 8px 8vw;
     color: #fff;
     font-size: 24px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -27,16 +27,11 @@
 }
 
 
-#music-container > p > a:link {
+#music-container p a:link {
     color: #598df3;
 
 }
 
-#music-container > p > a:visited {
+#music-container p a:visited {
     color: #9545d6;
-}
-
-#music-container > iframe {
-    width: 80vw;
-    height: 100vh;
 }

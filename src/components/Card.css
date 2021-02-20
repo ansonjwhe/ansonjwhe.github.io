@@ -39,9 +39,9 @@
 
 .icon-item {
   width: 125px;
+  transition: 0.3s;
 }
 
 .icon-item:hover {
   transform: translateY(-10px);
-  transition: 0.3s;
 }

@@ -1,10 +1,8 @@
-// import Swiper core and required modules
+import React from 'react'
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import './MusicSlider.css'
 
-// import 'swiper-bundle.css'
-// Import Swiper styles
+import './MusicSlider.css'
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
@@ -54,8 +52,7 @@ export default function MusicSlider(props) {
         frameborder='0'
         allowfullscreen 
         allow='autoplay; fullscreen'
-      >
-      </iframe>
+      />
     </SwiperSlide>
   )
 
@@ -63,9 +60,7 @@ export default function MusicSlider(props) {
     <div id='music-slider-container'>
       <Swiper
         loop = {true}
-        centeredSlides = {true}
         slidesPerView = {1}
-        spaceBetween = {10}
         navigation
         pagination = {{ clickable: true }}
         setWrapperSize = {true}
