@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import './Navbar.css';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
@@ -20,7 +20,6 @@ function HideOnScroll(props) {
 }
 
 export default function Navbar(props) {
-  let location = useLocation()
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);

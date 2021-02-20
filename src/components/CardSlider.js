@@ -1,6 +1,5 @@
 // import Swiper core and required modules
 import React from 'react';
-import Flip from 'react-reveal'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
