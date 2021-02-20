@@ -1,7 +1,8 @@
 // import Swiper core and required modules
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
 import Card from './Card'
 import './CardSlider.css'
 
@@ -20,7 +21,14 @@ export default function CardSlider(props) {
 
   const slides = data.map((item) =>
     <SwiperSlide class='swiper-slide'>
-      <Card name={item.name} imgsrc={item.imgsrc} desc={item.desc}></Card>
+      <Card
+        header={props.header} 
+        name={item.name} 
+        imgsrc={item.imgsrc}
+        github={item.github}
+        devpost={item.devpost}
+        desc={item.desc}
+      />
     </SwiperSlide>
   )
 
@@ -28,7 +36,6 @@ export default function CardSlider(props) {
     <div id='slider-container'>
       <Swiper
         loop = {true}
-        centeredSlides = {true}
         slidesPerView = {3}
         spaceBetween = {10}
         navigation
@@ -36,6 +43,7 @@ export default function CardSlider(props) {
         setWrapperSize = {true}
         onSwiper = {(swiper) => console.log(swiper)}
         onSlideChange = {() => console.log('slide change')}
+        grabCursor = {true}
       >
         {slides}
       </Swiper>

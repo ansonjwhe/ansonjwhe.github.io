@@ -7,7 +7,7 @@ export default function CardSection(props) {
     return (
         <div className='container'>
             <h1>{props.header}</h1>
-            <CardSlider data={props.data}/>
+            <CardSlider header={props.header} data={props.data}/>
         </div>
     )
 }
