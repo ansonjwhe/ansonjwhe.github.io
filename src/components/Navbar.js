@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import './Navbar.css';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
@@ -29,9 +28,9 @@ export default function Navbar(props) {
       <HideOnScroll {...props}>
         <nav className='navbar'>
           <div className='navbar-container'>
-            <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+            <HashLink smooth to='/#' className='navbar-logo' onClick={closeMobileMenu}>
               ansonjwhe
-            </Link>
+            </HashLink>
 
             <div className='menu-icon' onClick={handleClick}>
               <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
