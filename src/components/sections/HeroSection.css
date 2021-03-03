@@ -7,7 +7,7 @@ video {
 }
 
 .hero-container {
-    height: 100vh;
+    height: 830px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -15,11 +15,13 @@ video {
     align-items: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
     object-fit: contain;
+    overflow-x: hidden;
+    position: relative;
 }
 
 .hero-container #avatar {
     width: 200px;
-    height: auto;
+    height: 100%;
     border: 3px solid rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
 }
@@ -28,7 +30,7 @@ video {
     color: #fff;
     font-size: 90px;
     text-align: center;
-    margin: 20px 0;
+    margin: 20px;
     word-wrap: normal;
 }
 
@@ -52,6 +54,27 @@ video {
 .fa-play-circle {
     margin-left: 4px;
 }
+
+.social-icons {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.social-icon-link {
+    height: 60px;
+    color: white;
+    font-size: 50px;
+    line-height: 120%;
+    transition: 0.3s;
+}
+
+.social-icon-link:hover {
+    transform: scale(1.2) translateY(-5px);
+}
+
 
 @media screen and (max-width: 960px) {
     .hero-container > #avatar {
@@ -90,20 +113,12 @@ video {
     }
 }
 
-.social-icons {
-    width: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 30px;
-}
+@media screen and (max-width: 500px) {
+    .hero-container > p {
+        margin: 8px 20px;
+    }
 
-.social-icon-link {
-    color: white;
-    font-size: 50px;
-    transition: 0.3s;
-}
-
-.social-icon-link:hover {
-    transform: translateY(-5px);
+    .social-icons {
+        width: 250px
+    }
 }

@@ -17,14 +17,11 @@
   justify-content: center;
   align-items: center;
   object-fit: contain;
-}
-
-.footer-button {
-  font-size: 14px;
-  color: white;
+  margin-top: 20px;
 }
 
 #footer {
-  font-size: 14px;
+  font-size: 16px;
   color: white;
 }
+

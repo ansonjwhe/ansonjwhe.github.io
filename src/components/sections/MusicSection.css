@@ -13,7 +13,7 @@
     color: #fff;
     font-size: 60px;
     text-align: center;
-    margin: 120px 0 30px;
+    margin: 120px 20px 30px;
 }
 
 #music-container p {
@@ -26,7 +26,6 @@
     margin-bottom: 30px;
 }
 
-
 #music-container p a:link {
     color: #598df3;
 
@@ -34,4 +33,37 @@
 
 #music-container p a:visited {
     color: #9545d6;
+}
+
+@media screen and (max-width: 1000px) {
+    #music-container h1 {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    #music-container h1 {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #music-container > h1 {
+        font-size: 48px;
+    }
+
+    #music-container p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #music-container > h1 {
+        font-size: 36px;
+    }
+
+    #music-container p {
+        font-size: 16px;
+    }
 }

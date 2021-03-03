@@ -1,5 +1,5 @@
 #music-slider-container {
-  width: 80vw;
+  width: 70vw;
   height: 100vh;
 }
 
@@ -27,6 +27,36 @@
 }
 
 .swiper-slide iframe {
-  width: 99vw;
-  height: 99vh;
+  width: 99%;
+  height: 99%;
 }
+
+@media screen and (max-width: 1000px) {
+  #music-slider-container {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #music-slider-container {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #music-slider-container {
+    height: 120vw;
+  }
+}
+
+/* @media screen and (min-width: 1500px) {
+  #music-slider-container {
+    width: 60vw;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .icon-item {
+    width: 200px;
+  }
+} */

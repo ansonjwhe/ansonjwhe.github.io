@@ -51,7 +51,7 @@ export default function MusicSlider(props) {
         src={score.embed}
         frameborder='0'
         allowfullscreen 
-        allow='autoplay; fullscreen'
+        allow='fullscreen'
       />
     </SwiperSlide>
   )

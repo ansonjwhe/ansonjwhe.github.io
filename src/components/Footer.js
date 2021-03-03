@@ -12,15 +12,14 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   button: {
-    backgroundImage: 'linear-gradient(to right, #1F1C2C 0%, #928DAB  51%, #1F1C2C  100%)',
-    margin: '10px 50px',
-    padding: '15px 45px',
+    backgroundImage: 'linear-gradient(to right, #1F1C2C 0%, #565175  51%, #1F1C2C  100%)',
     textAlign: 'center',
     textTransform: 'uppercase',
     transition: '0.5s',
     backgroundSize: '200% auto',
     color: 'white',
-    boxShadow: '0 0 10px #eee',
+    fontSize: '18px',
+    boxShadow: '0 0 10px #616161',
     borderRadius: '30px',
     display: 'block',
     cursor: 'pointer',
@@ -38,16 +37,20 @@ export default function Footer() {
   return (
     <div id='footer-container'>
       <div id='button-container' className={classes.root}>
-        <HashLink smooth to='/resume#'>
-          <Button className={classes.button} variant="contained" color="primary" >
-            My Resume
-          </Button>
-        </HashLink>
-        <HashLink smooth to='/music#'>
-          <Button className={classes.button} variant="contained" color="secondary" >
-            My Music
-          </Button>
-        </HashLink>
+        <Fade left>
+          <HashLink smooth to='/resume#'>
+            <Button className={classes.button} variant="contained" color="primary" >
+              My Resume
+            </Button>
+          </HashLink>
+        </Fade>
+        <Fade right>
+          <HashLink smooth to='/music#'>
+            <Button className={classes.button} variant="contained" color="secondary" >
+              My Music
+            </Button>
+          </HashLink>
+        </Fade>
       </div>
       <Fade bottom cascade><h3 id='footer'>© 2021 Anson He</h3></Fade>
     </div>

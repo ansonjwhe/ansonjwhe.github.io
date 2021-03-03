@@ -32,3 +32,15 @@
   -webkit-align-items: center;
   align-items: center;
 }
+
+@media screen and (min-width: 1500px) {
+  #slider-container {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  #slider-container {
+    height: 700px;
+  }
+}

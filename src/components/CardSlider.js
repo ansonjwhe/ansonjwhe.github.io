@@ -45,6 +45,17 @@ export default function CardSlider(props) {
           onSwiper = {(swiper) => console.log(swiper)}
           onSlideChange = {() => console.log('slide change')}
           grabCursor = {true}
+          breakpoints={{
+            1: {
+              slidesPerView: 1,
+            },
+            700: {
+              slidesPerView: 2,
+            },
+            1160: {
+              slidesPerView: 3,
+            },
+          }}
         >
           {slides}
         </Swiper>
