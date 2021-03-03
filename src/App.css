@@ -11,8 +11,17 @@
 }
 
 #site-container {
-  background: url('./img/background.jpg') center center/cover no-repeat;
-  background-attachment: fixed;
+  background: url('./img/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+@media (hover: none) {
+  .homeHero {
+      background-attachment: initial;
+  }
 }
 
 
