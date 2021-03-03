@@ -38,14 +38,14 @@ export default function Footer() {
     <div id='footer-container'>
       <div id='button-container' className={classes.root}>
         <Fade left>
-          <HashLink smooth to='/resume#'>
+          <HashLink smooth to='/resume#' style={{textDecoration:'none'}}>
             <Button className={classes.button} variant="contained" color="primary" >
               My Resume
             </Button>
           </HashLink>
         </Fade>
         <Fade right>
-          <HashLink smooth to='/music#'>
+          <HashLink smooth to='/music#' style={{textDecoration:'none'}}>
             <Button className={classes.button} variant="contained" color="secondary" >
               My Music
             </Button>

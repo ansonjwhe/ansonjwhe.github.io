@@ -1,12 +1,10 @@
-// import Swiper core and required modules
 import React from 'react';
+import Card from './Card'
+import './CardSlider.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
-import Card from './Card'
-import './CardSlider.css'
 
-// import 'swiper-bundle.css'
 // Import Swiper styles
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
