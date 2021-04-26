@@ -52,7 +52,7 @@ export default function Footer() {
           </HashLink>
         </Fade>
       </div>
-      <Fade bottom cascade><h3 id='footer'>© 2021 Anson He</h3></Fade>
+      <Fade bottom cascade><h3 id='footer'>© Apr 2021 Anson He</h3></Fade>
     </div>
   )
 }

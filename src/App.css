@@ -4,7 +4,7 @@
   padding: 0;
   font-family: 'PT Sans', sans-serif;
 
-
+  
   /* background: #000 !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important; */
@@ -18,47 +18,21 @@
   -o-background-size: cover;
 }
 
+body::-webkit-scrollbar{
+  width: 0.8rem;
+}
+
+body::-webkit-scrollbar-track{
+  background: #3e3952
+}
+
+body::-webkit-scrollbar-thumb{
+  background: linear-gradient(#252131,#3e3957,#474170,#3e3957,#252131);
+  border-radius: 20px;
+}
+
 @media (hover: none) {
   .homeHero {
       background-attachment: initial;
   }
 }
-
-
-/* .home,
-.services,
-.products,
-.sign-up {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-}
-
-.services {
-  background-image: url('/images/img-2.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.products {
-  background-image: url('/images/img-1.jpg');
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.sign-up {
-  background-image: url('/images/img-8.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-} */
