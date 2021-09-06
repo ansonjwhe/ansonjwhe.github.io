@@ -64,8 +64,8 @@ export default function MusicSlider(props) {
         navigation
         pagination = {{ clickable: true }}
         setWrapperSize = {true}
-        onSwiper = {(swiper) => console.log(swiper)}
-        onSlideChange = {() => console.log('slide change')}
+        // onSwiper = {(swiper) => console.log(swiper)}
+        // onSlideChange = {() => console.log('slide change')}
       >
         {slides}
       </Swiper>

@@ -40,8 +40,8 @@ export default function CardSlider(props) {
           navigation
           pagination = {{ clickable: true }}
           setWrapperSize = {true}
-          onSwiper = {(swiper) => console.log(swiper)}
-          onSlideChange = {() => console.log('slide change')}
+          // onSwiper = {(swiper) => console.log(swiper)}
+          // onSlideChange = {() => console.log('slide change')}
           grabCursor = {true}
           breakpoints={{
             1: {
