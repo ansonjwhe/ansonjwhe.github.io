@@ -7,16 +7,28 @@ import Footer from '../Footer';
 export default function About() {
   const experiences = [
     {
-      name: 'Eco Club',
-      imgsrc: '/images/ecoclub.jpg',
-      desc: 'As the President of the Eco Club, I helped reestablish the club by attracting over 30 new members '
-      + 'and leading weekly eco-friendly initiatives.'
+      name: 'Cynorix Inc.',
+      imgsrc: '/images/cynorix.png',
+      desc: 'As a software developer at Cynorix Inc., I designed and built an online collaborative whiteboard web app, '
+      + 'secured with end-to-end encryption.'
+    },
+    {
+      name: 'WATonomous',
+      imgsrc: '/images/watonomous.jpg',
+      desc: 'As the Business Director for WATonomous, I lead the sponsorship and outreach, '
+      + 'finance, marketing, and design groups.'
     },
     {
       name: 'DECA',
       imgsrc: '/images/deca.jpg',
       desc: 'I competed in DECA for all 4 years of high school, qualifying for provincials every year, and finally '
       + 'achieving Provincial Champion status in the STDM event in my last year!'
+    },
+    {
+      name: 'Eco Club',
+      imgsrc: '/images/ecoclub.jpg',
+      desc: 'As the President of the Eco Club, I helped reestablish the club by attracting over 30 new members '
+      + 'and leading weekly eco-friendly initiatives.'
     },
     {
       name: 'Music Council',
@@ -30,12 +42,6 @@ export default function About() {
       desc: 'During my 4 years at Kumon, I served as both a Reading Master and a Primary Instructor, '
       + 'teaching students Math and English and conducting student orientation sessions.'
     },
-    {
-      name: 'WATonomous',
-      imgsrc: '/images/watonomous.jpg',
-      desc: 'As a core member of external sponsorship, I help raise funding for WATonomous, University of Waterloo\'s '
-      + 'one and only autonomous vehicle student design team.'
-    }
   ]
 
   const projects = [
